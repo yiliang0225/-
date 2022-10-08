@@ -1,0 +1,20 @@
+server:
+  port: 33001
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ctts-user
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.95.214.111:3306/ctts?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: lbc0225
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #mybatis日志
+  mapper-locations: classpath:com/ctts/user/mapper/xml/*.xml
