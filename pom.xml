@@ -11,6 +11,7 @@
         <module>ctts-service</module>
         <module>ctts-util</module>
         <module>ctts-entity</module>
+        <module>ctts-constant</module>
     </modules>
 
     <properties>
