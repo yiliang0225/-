@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>service-user</module>
+        <module>service-gateway</module>
     </modules>
 
     <dependencies>
@@ -26,6 +27,10 @@
             <groupId>com.ctts</groupId>
             <artifactId>ctts-constant</artifactId>
             <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
         <!--mysql-->
